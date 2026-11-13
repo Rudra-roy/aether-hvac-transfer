@@ -1,0 +1,25 @@
+name: building_13200
+seed: 13200
+floor_plan:
+  width: 343
+  height: 290
+  num_floors: 4
+  min_room_size: 34
+  max_room_size: 46
+  building_shape: composite
+  shape_ratio: 0.3325158627905857
+  composite_coverage: 0.7340041962211494
+  composite_style: architectural
+ahu:
+  num_ahus: 3
+simulation:
+  start_timestamp: 2023-07-10 06:00
+  num_days_in_episode: 30
+  occupants_per_zone: 2
+materials:
+  exterior_cv_conductivity: 0.1889
+  exterior_cv_density: 2184.309
+  interior_mass_cv_density: 19.5349
+  interior_wall_cv_conductivity: 0.4646
+  interior_wall_cv_density: 149.0953
+  exterior_cv_heat_capacity: 895.8774

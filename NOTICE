@@ -1,0 +1,13 @@
+Aether HVAC Transfer
+Copyright 2026 Team Aether
+
+This product includes software developed by Team Aether.
+
+aether/inv.py is a reimplementation of the control mechanisms of the public
+controller sb26-stop-heating by MorS1337 (https://github.com/MorS1337/sb26-stop-heating,
+Apache License 2.0), which builds on the public Kaggle notebook "CPU A, alpha 0.75
+control" by Daniel Wu (Apache License 2.0). Its constants follow that controller.
+
+The Smart Buildings Challenge 2026 starter kit
+(https://github.com/smart-buildings-2026/starter-kit) is an external dependency
+and is not redistributed here.

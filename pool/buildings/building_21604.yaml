@@ -1,0 +1,25 @@
+name: building_21604
+seed: 21604
+floor_plan:
+  width: 370
+  height: 284
+  num_floors: 2
+  min_room_size: 32
+  max_room_size: 45
+  building_shape: composite
+  shape_ratio: 0.3773662371403728
+  composite_coverage: 0.6668952090429283
+  composite_style: architectural
+ahu:
+  num_ahus: 5
+simulation:
+  start_timestamp: 2023-07-10 06:00
+  num_days_in_episode: 30
+  occupants_per_zone: 1
+materials:
+  exterior_cv_conductivity: 0.1768
+  exterior_cv_density: 1449.2443
+  interior_mass_cv_density: 27.9469
+  interior_wall_cv_conductivity: 0.5251
+  interior_wall_cv_density: 117.3679
+  exterior_cv_heat_capacity: 868.5901

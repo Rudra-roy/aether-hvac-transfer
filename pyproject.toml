@@ -1,0 +1,25 @@
+[project]
+name = "aether"
+version = "1.0.0"
+description = "Physics prior planner and evaluation harness for the NeurIPS 2026 Smart Buildings Challenge (Team Aether)"
+requires-python = "==3.12.*"
+dependencies = [
+    "smart-buildings-competition",
+    "pytest>=8.0",
+    "cma>=3.3",
+    "pyyaml",
+]
+
+[tool.uv.sources]
+smart-buildings-competition = { path = "external/starter-kit", editable = true }
+
+[tool.setuptools.packages.find]
+include = ["aether*", "harness*", "submission*"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["slow: needs full-length simulator rollouts"]

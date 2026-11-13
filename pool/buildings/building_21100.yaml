@@ -1,0 +1,25 @@
+name: building_21100
+seed: 21100
+floor_plan:
+  width: 455
+  height: 350
+  num_floors: 3
+  min_room_size: 43
+  max_room_size: 55
+  building_shape: composite
+  shape_ratio: 0.3879119876670904
+  composite_coverage: 0.7297650454103075
+  composite_style: architectural
+ahu:
+  num_ahus: 5
+simulation:
+  start_timestamp: 2023-07-10 06:00
+  num_days_in_episode: 30
+  occupants_per_zone: 1
+materials:
+  exterior_cv_conductivity: 0.3651
+  exterior_cv_density: 562.7174
+  interior_mass_cv_density: 23.5154
+  interior_wall_cv_conductivity: 0.5488
+  interior_wall_cv_density: 159.0294
+  exterior_cv_heat_capacity: 885.7945

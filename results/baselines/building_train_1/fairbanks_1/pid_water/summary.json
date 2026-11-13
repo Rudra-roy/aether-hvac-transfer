@@ -1,0 +1,12 @@
+{
+  "policy": "pid_water",
+  "total_reward": -1848.3069509131892,
+  "total_steps": 8640,
+  "avg_reward": -0.21392441561495246,
+  "total_normalized_productivity_regret": -1010.1105426582508,
+  "total_normalized_energy_cost": 2376.564031488546,
+  "total_normalized_carbon_emission": 3834.6390988992644,
+  "seconds_per_step": 0.13296804855819103,
+  "wall_seconds": 1160.9458558559418,
+  "params": null
+}

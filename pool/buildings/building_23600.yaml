@@ -1,0 +1,25 @@
+name: building_23600
+seed: 23600
+floor_plan:
+  width: 337
+  height: 266
+  num_floors: 3
+  min_room_size: 32
+  max_room_size: 44
+  building_shape: composite
+  shape_ratio: 0.3411994721529005
+  composite_coverage: 0.6846296128740847
+  composite_style: architectural
+ahu:
+  num_ahus: 6
+simulation:
+  start_timestamp: 2023-07-10 06:00
+  num_days_in_episode: 30
+  occupants_per_zone: 1
+materials:
+  exterior_cv_conductivity: 0.2448
+  exterior_cv_density: 461.0393
+  interior_mass_cv_density: 22.6623
+  interior_wall_cv_conductivity: 0.5858
+  interior_wall_cv_density: 243.0343
+  exterior_cv_heat_capacity: 967.6688

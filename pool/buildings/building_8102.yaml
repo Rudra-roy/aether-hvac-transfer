@@ -1,0 +1,25 @@
+name: building_8102
+seed: 8102
+floor_plan:
+  width: 416
+  height: 253
+  num_floors: 4
+  min_room_size: 27
+  max_room_size: 38
+  building_shape: composite
+  shape_ratio: 0.3023158981524877
+  composite_coverage: 0.7180825434492266
+  composite_style: architectural
+ahu:
+  num_ahus: 4
+simulation:
+  start_timestamp: 2023-07-10 06:00
+  num_days_in_episode: 30
+  occupants_per_zone: 1
+materials:
+  exterior_cv_conductivity: 0.2033
+  exterior_cv_density: 733.0438
+  interior_mass_cv_density: 33.9169
+  interior_wall_cv_conductivity: 0.5261
+  interior_wall_cv_density: 180.7906
+  exterior_cv_heat_capacity: 926.247

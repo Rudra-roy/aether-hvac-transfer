@@ -1,0 +1,25 @@
+name: building_9401
+seed: 9401
+floor_plan:
+  width: 367
+  height: 246
+  num_floors: 3
+  min_room_size: 27
+  max_room_size: 41
+  building_shape: composite
+  shape_ratio: 0.29204851240817553
+  composite_coverage: 0.7638496226140701
+  composite_style: architectural
+ahu:
+  num_ahus: 5
+simulation:
+  start_timestamp: 2023-07-10 06:00
+  num_days_in_episode: 30
+  occupants_per_zone: 1
+materials:
+  exterior_cv_conductivity: 0.3551
+  exterior_cv_density: 1395.7098
+  interior_mass_cv_density: 17.2326
+  interior_wall_cv_conductivity: 0.4709
+  interior_wall_cv_density: 125.0351
+  exterior_cv_heat_capacity: 953.339

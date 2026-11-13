@@ -1,0 +1,25 @@
+name: building_22100
+seed: 22100
+floor_plan:
+  width: 657
+  height: 421
+  num_floors: 3
+  min_room_size: 36
+  max_room_size: 52
+  building_shape: composite
+  shape_ratio: 0.3137446919712486
+  composite_coverage: 0.7639065524846049
+  composite_style: architectural
+ahu:
+  num_ahus: 6
+simulation:
+  start_timestamp: 2023-07-10 06:00
+  num_days_in_episode: 30
+  occupants_per_zone: 2
+materials:
+  exterior_cv_conductivity: 0.1945
+  exterior_cv_density: 377.2469
+  interior_mass_cv_density: 10.2464
+  interior_wall_cv_conductivity: 0.5672
+  interior_wall_cv_density: 421.1288
+  exterior_cv_heat_capacity: 889.0631

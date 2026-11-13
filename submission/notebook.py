@@ -1,0 +1,143 @@
+"""Generate the Kaggle submission notebook: the aether package as plain code cells.
+
+    uv run python -m submission.notebook --params results/tune/prior/best.json [--arm mpc_off]
+        -> submission/aether_submission.ipynb
+
+Layout follows the competition's submission page (smart-buildings-2026.github.io/competition/submission.html):
+1. setup: put the attached competition data and its kaggle_evaluation gateway on sys.path;
+2. one cell per aether module, in dependency order, with the package-internal `from aether... import` lines
+   removed (every cell shares the notebook's namespace; tests/test_submission.py checks there are no name clashes
+   by comparing actions with the package bitwise);
+3. the tuned parameters and the frozen prior as literals, and SubmissionPolicy (the gateway's Policy subclass);
+4. the inference server's run().
+"""
+import argparse
+import json
+import re
+from dataclasses import asdict
+from pathlib import Path
+
+from aether.params import Params
+
+ROOT = Path(__file__).resolve().parents[1]
+OUT = ROOT / "submission/aether_submission.ipynb"
+MODULES = ["params", "obs", "actions", "zone_model", "identifier", "supervisor", "planner", "guard", "probe", "mpc", "value",
+           "residual", "inv", "policy"]  # dependency order; never "oracle" (weather files stay out of submissions)
+
+SETUP = '''import os
+import sys
+from pathlib import Path
+
+import numpy as np
+
+# The competition data (attached via "Add Input") carries the simulator and the kaggle_evaluation gateway.
+CANDIDATES = [Path(os.environ["SMART_BUILDINGS_DATA_ROOT"])] if os.getenv("SMART_BUILDINGS_DATA_ROOT") else []
+CANDIDATES += [Path("/kaggle/input/competitions/neurips-2026-smart-buildings"), Path("/kaggle/input/neurips-2026-smart-buildings")]
+DATA_ROOT = next((p for p in CANDIDATES if (p / "kaggle_evaluation").is_dir()), None)
+if DATA_ROOT is None:
+    raise FileNotFoundError(f"Competition data not found; attach it to the notebook. Checked: {CANDIDATES}")
+for sub in (DATA_ROOT, DATA_ROOT / "kaggle_evaluation"):
+    sys.path.insert(0, str(sub))
+IS_RERUN = os.getenv("KAGGLE_IS_COMPETITION_RERUN") is not None
+print("data:", DATA_ROOT, "| hidden-test rerun:", IS_RERUN)'''
+
+POLICY = '''from kaggle_evaluation import smart_buildings_inference_server
+
+import time
+
+ARM = {arm!r}
+PARAMS = {params!r}  # tuned on the training pool (results/tune/prior/best.json)
+PRIOR = {prior!r}  # frozen population prior (aether/prior.json)
+LOG_EVERY = 72        # progress line every 72 steps = 6 simulated hours (logging only; actions are unaffected)
+EPISODE_STEPS = 8640  # 30 days at 5 min, the competition episode
+
+
+class SubmissionPolicy(smart_buildings_inference_server.Policy):
+    """The controller, registered as the gateway's Policy subclass. A fresh instance is built per scenario."""
+
+    scenario = 0
+
+    def __init__(self, building_meta_data, action_spec):
+        super().__init__(building_meta_data, action_spec)
+        prior = Prior(np.array(PRIOR["m0"], float), np.array(PRIOR["P0"], float), float(PRIOR["R"]))
+        self.policy = AetherPolicy(building_meta_data, action_spec, params=Params(**PARAMS), arm=ARM, prior=prior)
+        SubmissionPolicy.scenario += 1
+        self.step, self.t0 = 0, time.time()
+        p = self.policy.parser
+        print(f"[aether] scenario {{SubmissionPolicy.scenario}}: {{len(p.vavs)}} zones, {{len(p.ahus)}} air handlers, controller {{ARM}}", flush=True)
+
+    def get_action(self, obs):
+        action = self.policy.get_action(obs)
+        self.step += 1
+        if self.step % LOG_EVERY == 0:
+            s = self.policy.parser.parse(obs)
+            dt = time.time() - self.t0
+            left = (EPISODE_STEPS - self.step) * dt / self.step
+            in_band = np.mean((s.T >= s.hsp) & (s.T <= s.csp)) * 100
+            print(f"[aether] day {{self.step / 288:4.1f}}/30 | {{dt / 60:5.1f}} min, {{1000 * dt / self.step:4.0f}} ms/step, ~{{left / 60:4.1f}} min left"
+                  f" | {{s.hour:05.2f}} h {{'occupied  ' if s.comfort_now else 'unoccupied'}} | outside {{s.tout - 273.15:+5.1f}} C"
+                  f" | zones median {{np.median(s.T) - 273.15:4.1f}} C, {{in_band:3.0f}}% in band", flush=True)
+        return action'''
+
+RUN = '''# A normal "Save Version" plays one public example scenario; the competition rerun plays the hidden ones.
+smart_buildings_inference_server.SmartBuildingsInferenceServer(SubmissionPolicy).run(competition_data_folder=str(DATA_ROOT))'''
+
+INTRO = """# Team Aether: physics-prior planning controller
+
+Population thermal prior (frozen) + short-horizon enumerative planner with a per-zone offset; tuned rule-layer parameters.
+numpy and the standard library only; no internet, no attached weights.
+
+Cells: setup, then one cell per module of the `aether` package (parameters, observation parser, action writer, zone model,
+identifier, supervisor, rule layer, guard, probe, planner, learned value, policy), then the submission policy and the server.
+Generated by `submission/notebook.py`; edit the package, not this notebook."""
+
+_IMPORT = re.compile(r"^(\s*)(from aether(\.\w+)? import .*|import aether.*)$")
+
+
+def plain(name: str) -> str:
+    """A module's source with the package-internal imports removed (parenthesised imports included)."""
+    out, skipping = [], False
+    for line in (ROOT / "aether" / f"{name}.py").read_text().splitlines():
+        if skipping:
+            skipping = ")" not in line
+            continue
+        m = _IMPORT.match(line)
+        if m:
+            skipping = "(" in line and ")" not in line
+            if m.group(1):  # an indented (lazy) import: keep the block syntactically valid
+                out.append(f"{m.group(1)}pass  # (package import; defined in an earlier cell)")
+            continue
+        out.append(line)
+    return f"# ---- aether/{name}.py ----\n" + "\n".join(out).strip() + "\n"
+
+
+def cell(kind: str, src: str) -> dict:
+    c = {"cell_type": kind, "metadata": {}, "source": src.splitlines(keepends=True)}
+    return c | ({"execution_count": None, "outputs": []} if kind == "code" else {})
+
+
+def build(out: Path = OUT, params: Params | None = None, arm: str = "mpc_off", prior_path: Path = ROOT / "aether/prior.json") -> Path:
+    prior = {k: v for k, v in json.loads(Path(prior_path).read_text()).items() if k in ("m0", "P0", "R")}
+    cells = [cell("markdown", INTRO), cell("code", SETUP)]
+    cells += [cell("code", plain(m)) for m in MODULES]
+    cells += [cell("code", POLICY.format(arm=arm, params=asdict(params or Params()), prior=prior)), cell("code", RUN)]
+    for i, c in enumerate(cells):
+        c["id"] = f"cell-{i:02d}"  # nbformat 4.5: every cell needs a unique id
+    nb = {"cells": cells, "nbformat": 4, "nbformat_minor": 5,
+          "metadata": {"kernelspec": {"display_name": "Python 3", "language": "python", "name": "python3"}, "language_info": {"name": "python"}}}
+    out = Path(out)
+    out.write_text(json.dumps(nb, indent=1) + "\n")
+    return out
+
+
+def main(argv=None):
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--params", type=Path, default=None)
+    ap.add_argument("--arm", default="mpc_off")  # the submitted policy
+    ap.add_argument("--out", type=Path, default=OUT)
+    a = ap.parse_args(argv)
+    print("wrote", build(a.out, Params.from_json(a.params) if a.params else Params(), a.arm))
+
+
+if __name__ == "__main__":
+    main()

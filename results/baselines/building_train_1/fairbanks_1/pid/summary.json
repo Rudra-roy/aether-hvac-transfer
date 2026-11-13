@@ -1,0 +1,12 @@
+{
+  "policy": "pid",
+  "total_reward": -1301.1709950051882,
+  "total_steps": 8640,
+  "avg_reward": -0.15059849479226714,
+  "total_normalized_productivity_regret": -739.0969180008979,
+  "total_normalized_energy_cost": 1522.0893327598824,
+  "total_normalized_carbon_emission": 2766.4748868772003,
+  "seconds_per_step": 0.13314420820938216,
+  "wall_seconds": 1160.6485712528229,
+  "params": null
+}

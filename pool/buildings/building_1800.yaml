@@ -1,0 +1,25 @@
+name: building_1800
+seed: 1800
+floor_plan:
+  width: 585
+  height: 453
+  num_floors: 2
+  min_room_size: 35
+  max_room_size: 48
+  building_shape: composite
+  shape_ratio: 0.3229669236616084
+  composite_coverage: 0.7083176820303589
+  composite_style: architectural
+ahu:
+  num_ahus: 6
+simulation:
+  start_timestamp: 2023-07-10 06:00
+  num_days_in_episode: 30
+  occupants_per_zone: 1
+materials:
+  exterior_cv_conductivity: 0.1607
+  exterior_cv_density: 2397.8311
+  interior_mass_cv_density: 15.6141
+  interior_wall_cv_conductivity: 0.4866
+  interior_wall_cv_density: 236.0388
+  exterior_cv_heat_capacity: 866.6471

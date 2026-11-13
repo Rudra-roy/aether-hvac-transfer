@@ -1,0 +1,25 @@
+name: building_14900
+seed: 14900
+floor_plan:
+  width: 653
+  height: 367
+  num_floors: 4
+  min_room_size: 55
+  max_room_size: 68
+  building_shape: composite
+  shape_ratio: 0.2855632717352672
+  composite_coverage: 0.6864473943420976
+  composite_style: architectural
+ahu:
+  num_ahus: 4
+simulation:
+  start_timestamp: 2023-07-10 06:00
+  num_days_in_episode: 30
+  occupants_per_zone: 2
+materials:
+  exterior_cv_conductivity: 0.3278
+  exterior_cv_density: 798.6816
+  interior_mass_cv_density: 25.4191
+  interior_wall_cv_conductivity: 0.4949
+  interior_wall_cv_density: 226.1036
+  exterior_cv_heat_capacity: 909.2604

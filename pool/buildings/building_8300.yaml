@@ -1,0 +1,25 @@
+name: building_8300
+seed: 8300
+floor_plan:
+  width: 320
+  height: 201
+  num_floors: 2
+  min_room_size: 34
+  max_room_size: 50
+  building_shape: composite
+  shape_ratio: 0.365990152784706
+  composite_coverage: 0.6892845274318874
+  composite_style: architectural
+ahu:
+  num_ahus: 5
+simulation:
+  start_timestamp: 2023-07-10 06:00
+  num_days_in_episode: 30
+  occupants_per_zone: 1
+materials:
+  exterior_cv_conductivity: 0.3269
+  exterior_cv_density: 548.3406
+  interior_mass_cv_density: 21.8912
+  interior_wall_cv_conductivity: 0.4953
+  interior_wall_cv_density: 217.6361
+  exterior_cv_heat_capacity: 937.5333

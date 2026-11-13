@@ -1,0 +1,25 @@
+name: building_7300
+seed: 7300
+floor_plan:
+  width: 397
+  height: 208
+  num_floors: 3
+  min_room_size: 32
+  max_room_size: 43
+  building_shape: composite
+  shape_ratio: 0.30107950112999265
+  composite_coverage: 0.8457476812640506
+  composite_style: architectural
+ahu:
+  num_ahus: 3
+simulation:
+  start_timestamp: 2023-07-10 06:00
+  num_days_in_episode: 30
+  occupants_per_zone: 1
+materials:
+  exterior_cv_conductivity: 0.4878
+  exterior_cv_density: 2076.6068
+  interior_mass_cv_density: 19.1101
+  interior_wall_cv_conductivity: 0.5577
+  interior_wall_cv_density: 172.6368
+  exterior_cv_heat_capacity: 870.5078

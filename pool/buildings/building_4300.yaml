@@ -1,0 +1,25 @@
+name: building_4300
+seed: 4300
+floor_plan:
+  width: 382
+  height: 249
+  num_floors: 2
+  min_room_size: 29
+  max_room_size: 45
+  building_shape: composite
+  shape_ratio: 0.39779306295704414
+  composite_coverage: 0.7903616712622987
+  composite_style: architectural
+ahu:
+  num_ahus: 7
+simulation:
+  start_timestamp: 2023-07-10 06:00
+  num_days_in_episode: 30
+  occupants_per_zone: 1
+materials:
+  exterior_cv_conductivity: 0.293
+  exterior_cv_density: 399.9914
+  interior_mass_cv_density: 31.1186
+  interior_wall_cv_conductivity: 0.5113
+  interior_wall_cv_density: 618.035
+  exterior_cv_heat_capacity: 972.2334

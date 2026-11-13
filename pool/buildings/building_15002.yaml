@@ -1,0 +1,25 @@
+name: building_15002
+seed: 15002
+floor_plan:
+  width: 385
+  height: 255
+  num_floors: 3
+  min_room_size: 29
+  max_room_size: 44
+  building_shape: composite
+  shape_ratio: 0.3436314824232586
+  composite_coverage: 0.8031631480031962
+  composite_style: architectural
+ahu:
+  num_ahus: 6
+simulation:
+  start_timestamp: 2023-07-10 06:00
+  num_days_in_episode: 30
+  occupants_per_zone: 2
+materials:
+  exterior_cv_conductivity: 0.2294
+  exterior_cv_density: 841.1509
+  interior_mass_cv_density: 26.4917
+  interior_wall_cv_conductivity: 0.5213
+  interior_wall_cv_density: 155.186
+  exterior_cv_heat_capacity: 966.4465

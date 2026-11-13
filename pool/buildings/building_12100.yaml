@@ -1,0 +1,25 @@
+name: building_12100
+seed: 12100
+floor_plan:
+  width: 684
+  height: 455
+  num_floors: 2
+  min_room_size: 49
+  max_room_size: 60
+  building_shape: composite
+  shape_ratio: 0.37239658689994887
+  composite_coverage: 0.7226057104432048
+  composite_style: architectural
+ahu:
+  num_ahus: 3
+simulation:
+  start_timestamp: 2023-07-10 06:00
+  num_days_in_episode: 30
+  occupants_per_zone: 2
+materials:
+  exterior_cv_conductivity: 0.3017
+  exterior_cv_density: 878.5592
+  interior_mass_cv_density: 10.0578
+  interior_wall_cv_conductivity: 0.4929
+  interior_wall_cv_density: 328.8138
+  exterior_cv_heat_capacity: 989.3723

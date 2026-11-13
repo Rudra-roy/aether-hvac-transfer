@@ -1,0 +1,25 @@
+name: building_14806
+seed: 14806
+floor_plan:
+  width: 324
+  height: 207
+  num_floors: 3
+  min_room_size: 31
+  max_room_size: 44
+  building_shape: composite
+  shape_ratio: 0.3145421826721882
+  composite_coverage: 0.8335128577852495
+  composite_style: architectural
+ahu:
+  num_ahus: 6
+simulation:
+  start_timestamp: 2023-07-10 06:00
+  num_days_in_episode: 30
+  occupants_per_zone: 2
+materials:
+  exterior_cv_conductivity: 0.1732
+  exterior_cv_density: 1286.6444
+  interior_mass_cv_density: 21.8267
+  interior_wall_cv_conductivity: 0.5526
+  interior_wall_cv_density: 519.9851
+  exterior_cv_heat_capacity: 853.3131

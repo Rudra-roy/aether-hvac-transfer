@@ -1,0 +1,25 @@
+name: building_3000
+seed: 3000
+floor_plan:
+  width: 399
+  height: 204
+  num_floors: 3
+  min_room_size: 26
+  max_room_size: 39
+  building_shape: composite
+  shape_ratio: 0.35768345383473266
+  composite_coverage: 0.6781581947255501
+  composite_style: architectural
+ahu:
+  num_ahus: 6
+simulation:
+  start_timestamp: 2023-07-10 06:00
+  num_days_in_episode: 30
+  occupants_per_zone: 2
+materials:
+  exterior_cv_conductivity: 0.5461
+  exterior_cv_density: 410.1034
+  interior_mass_cv_density: 16.4592
+  interior_wall_cv_conductivity: 0.5673
+  interior_wall_cv_density: 207.4777
+  exterior_cv_heat_capacity: 882.8543

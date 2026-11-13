@@ -1,0 +1,12 @@
+{
+  "policy": "fixed_setpoint",
+  "total_reward": -1288.251323052944,
+  "total_steps": 8640,
+  "avg_reward": -0.14910316239038704,
+  "total_normalized_productivity_regret": -476.58772200881504,
+  "total_normalized_energy_cost": 1784.670016259537,
+  "total_normalized_carbon_emission": 3226.8234355019813,
+  "seconds_per_step": 0.13324362757029357,
+  "wall_seconds": 1160.8519678115845,
+  "params": null
+}

@@ -1,0 +1,50 @@
+{
+ "m0": [
+  0.08359891739667022,
+  7.040746315500286,
+  0.0,
+  -0.7295796302956723,
+  0.0,
+  3.4026441762389554,
+  0.41952147076440177,
+  -0.04736356191579222,
+  -0.025470087059944885,
+  0.1155862750233519
+ ],
+ "P0": [
+  0.06871365731713709,
+  7.920099017188156,
+  3.282923429835227,
+  7.709367850060869,
+  1.7997515391625025,
+  3.5775065642715553,
+  0.1239434196295167,
+  0.0036226714989511352,
+  0.003436208483694464,
+  0.017734740605113666
+ ],
+ "R": 0.031160601967372126,
+ "fitted_on": [
+  "building_1000/fairbanks_1",
+  "building_1100/fairbanks_2",
+  "building_1200/fairbanks_4",
+  "building_1302/fairbanks_5",
+  "building_1901/denver_2",
+  "building_2000/denver_3",
+  "building_2100/denver_5",
+  "building_2200/denver_6",
+  "building_2800/atlanta_1",
+  "building_2902/atlanta_2",
+  "building_3000/atlanta_3",
+  "building_3100/atlanta_5",
+  "building_3701/phoenix_1",
+  "building_3800/phoenix_3",
+  "building_3900/phoenix_4",
+  "building_4000/phoenix_5",
+  "building_4600/singapore_1",
+  "building_4700/singapore_3",
+  "building_4800/singapore_4",
+  "building_4901/singapore_6"
+ ],
+ "n_zones": 2780
+}

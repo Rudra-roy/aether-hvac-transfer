@@ -1,0 +1,25 @@
+name: building_8501
+seed: 8501
+floor_plan:
+  width: 409
+  height: 219
+  num_floors: 4
+  min_room_size: 33
+  max_room_size: 47
+  building_shape: composite
+  shape_ratio: 0.33191016077594837
+  composite_coverage: 0.6844588635517524
+  composite_style: architectural
+ahu:
+  num_ahus: 4
+simulation:
+  start_timestamp: 2023-07-10 06:00
+  num_days_in_episode: 30
+  occupants_per_zone: 1
+materials:
+  exterior_cv_conductivity: 0.3848
+  exterior_cv_density: 895.8784
+  interior_mass_cv_density: 13.4186
+  interior_wall_cv_conductivity: 0.5514
+  interior_wall_cv_density: 527.184
+  exterior_cv_heat_capacity: 998.9755

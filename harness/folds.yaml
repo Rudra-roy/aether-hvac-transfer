@@ -1,0 +1,208 @@
+shipped:
+- external/starter-kit/smart_buildings/training_scenarios/building_train_1/atlanta_2
+- external/starter-kit/smart_buildings/training_scenarios/building_train_1/denver_7
+- external/starter-kit/smart_buildings/training_scenarios/building_train_1/fairbanks_1
+- external/starter-kit/smart_buildings/training_scenarios/building_train_1/phoenix_5
+- external/starter-kit/smart_buildings/training_scenarios/building_train_1/singapore_8
+- external/starter-kit/smart_buildings/training_scenarios/building_train_2/atlanta_3
+- external/starter-kit/smart_buildings/training_scenarios/building_train_2/denver_8
+- external/starter-kit/smart_buildings/training_scenarios/building_train_2/fairbanks_2
+- external/starter-kit/smart_buildings/training_scenarios/building_train_2/phoenix_6
+- external/starter-kit/smart_buildings/training_scenarios/building_train_2/singapore_1
+- external/starter-kit/smart_buildings/training_scenarios/building_train_4/atlanta_5
+- external/starter-kit/smart_buildings/training_scenarios/building_train_4/denver_2
+- external/starter-kit/smart_buildings/training_scenarios/building_train_4/fairbanks_4
+- external/starter-kit/smart_buildings/training_scenarios/building_train_4/phoenix_8
+- external/starter-kit/smart_buildings/training_scenarios/building_train_4/singapore_3
+- external/starter-kit/smart_buildings/training_scenarios/building_train_5/atlanta_6
+- external/starter-kit/smart_buildings/training_scenarios/building_train_5/denver_3
+- external/starter-kit/smart_buildings/training_scenarios/building_train_5/fairbanks_5
+- external/starter-kit/smart_buildings/training_scenarios/building_train_5/phoenix_1
+- external/starter-kit/smart_buildings/training_scenarios/building_train_5/singapore_4
+- external/starter-kit/smart_buildings/training_scenarios/building_train_7/atlanta_8
+- external/starter-kit/smart_buildings/training_scenarios/building_train_7/denver_5
+- external/starter-kit/smart_buildings/training_scenarios/building_train_7/fairbanks_7
+- external/starter-kit/smart_buildings/training_scenarios/building_train_7/phoenix_3
+- external/starter-kit/smart_buildings/training_scenarios/building_train_7/singapore_6
+- external/starter-kit/smart_buildings/training_scenarios/building_train_8/atlanta_1
+- external/starter-kit/smart_buildings/training_scenarios/building_train_8/denver_6
+- external/starter-kit/smart_buildings/training_scenarios/building_train_8/fairbanks_8
+- external/starter-kit/smart_buildings/training_scenarios/building_train_8/phoenix_4
+- external/starter-kit/smart_buildings/training_scenarios/building_train_8/singapore_7
+loso:
+  fairbanks:
+    test:
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_1/fairbanks_1
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_2/fairbanks_2
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_4/fairbanks_4
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_5/fairbanks_5
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_7/fairbanks_7
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_8/fairbanks_8
+    train:
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_1/atlanta_2
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_1/denver_7
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_1/phoenix_5
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_1/singapore_8
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_2/atlanta_3
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_2/denver_8
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_2/phoenix_6
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_2/singapore_1
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_4/atlanta_5
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_4/denver_2
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_4/phoenix_8
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_4/singapore_3
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_5/atlanta_6
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_5/denver_3
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_5/phoenix_1
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_5/singapore_4
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_7/atlanta_8
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_7/denver_5
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_7/phoenix_3
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_7/singapore_6
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_8/atlanta_1
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_8/denver_6
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_8/phoenix_4
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_8/singapore_7
+  denver:
+    test:
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_1/denver_7
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_2/denver_8
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_4/denver_2
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_5/denver_3
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_7/denver_5
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_8/denver_6
+    train:
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_1/atlanta_2
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_1/fairbanks_1
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_1/phoenix_5
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_1/singapore_8
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_2/atlanta_3
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_2/fairbanks_2
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_2/phoenix_6
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_2/singapore_1
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_4/atlanta_5
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_4/fairbanks_4
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_4/phoenix_8
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_4/singapore_3
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_5/atlanta_6
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_5/fairbanks_5
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_5/phoenix_1
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_5/singapore_4
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_7/atlanta_8
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_7/fairbanks_7
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_7/phoenix_3
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_7/singapore_6
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_8/atlanta_1
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_8/fairbanks_8
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_8/phoenix_4
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_8/singapore_7
+  atlanta:
+    test:
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_1/atlanta_2
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_2/atlanta_3
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_4/atlanta_5
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_5/atlanta_6
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_7/atlanta_8
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_8/atlanta_1
+    train:
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_1/denver_7
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_1/fairbanks_1
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_1/phoenix_5
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_1/singapore_8
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_2/denver_8
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_2/fairbanks_2
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_2/phoenix_6
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_2/singapore_1
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_4/denver_2
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_4/fairbanks_4
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_4/phoenix_8
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_4/singapore_3
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_5/denver_3
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_5/fairbanks_5
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_5/phoenix_1
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_5/singapore_4
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_7/denver_5
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_7/fairbanks_7
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_7/phoenix_3
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_7/singapore_6
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_8/denver_6
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_8/fairbanks_8
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_8/phoenix_4
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_8/singapore_7
+  phoenix:
+    test:
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_1/phoenix_5
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_2/phoenix_6
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_4/phoenix_8
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_5/phoenix_1
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_7/phoenix_3
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_8/phoenix_4
+    train:
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_1/atlanta_2
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_1/denver_7
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_1/fairbanks_1
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_1/singapore_8
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_2/atlanta_3
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_2/denver_8
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_2/fairbanks_2
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_2/singapore_1
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_4/atlanta_5
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_4/denver_2
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_4/fairbanks_4
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_4/singapore_3
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_5/atlanta_6
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_5/denver_3
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_5/fairbanks_5
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_5/singapore_4
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_7/atlanta_8
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_7/denver_5
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_7/fairbanks_7
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_7/singapore_6
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_8/atlanta_1
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_8/denver_6
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_8/fairbanks_8
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_8/singapore_7
+  singapore:
+    test:
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_1/singapore_8
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_2/singapore_1
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_4/singapore_3
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_5/singapore_4
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_7/singapore_6
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_8/singapore_7
+    train:
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_1/atlanta_2
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_1/denver_7
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_1/fairbanks_1
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_1/phoenix_5
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_2/atlanta_3
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_2/denver_8
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_2/fairbanks_2
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_2/phoenix_6
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_4/atlanta_5
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_4/denver_2
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_4/fairbanks_4
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_4/phoenix_8
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_5/atlanta_6
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_5/denver_3
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_5/fairbanks_5
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_5/phoenix_1
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_7/atlanta_8
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_7/denver_5
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_7/fairbanks_7
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_7/phoenix_3
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_8/atlanta_1
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_8/denver_6
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_8/fairbanks_8
+    - external/starter-kit/smart_buildings/training_scenarios/building_train_8/phoenix_4
+subset10:
+- external/starter-kit/smart_buildings/training_scenarios/building_train_1/fairbanks_1
+- external/starter-kit/smart_buildings/training_scenarios/building_train_5/fairbanks_5
+- external/starter-kit/smart_buildings/training_scenarios/building_train_2/denver_8
+- external/starter-kit/smart_buildings/training_scenarios/building_train_7/denver_5
+- external/starter-kit/smart_buildings/training_scenarios/building_train_4/atlanta_5
+- external/starter-kit/smart_buildings/training_scenarios/building_train_8/atlanta_1
+- external/starter-kit/smart_buildings/training_scenarios/building_train_5/phoenix_1
+- external/starter-kit/smart_buildings/training_scenarios/building_train_1/phoenix_5
+- external/starter-kit/smart_buildings/training_scenarios/building_train_7/singapore_6
+- external/starter-kit/smart_buildings/training_scenarios/building_train_2/singapore_1

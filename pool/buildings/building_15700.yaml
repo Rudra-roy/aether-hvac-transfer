@@ -1,0 +1,25 @@
+name: building_15700
+seed: 15700
+floor_plan:
+  width: 604
+  height: 454
+  num_floors: 2
+  min_room_size: 59
+  max_room_size: 73
+  building_shape: composite
+  shape_ratio: 0.3158314612761471
+  composite_coverage: 0.6866391153286326
+  composite_style: architectural
+ahu:
+  num_ahus: 5
+simulation:
+  start_timestamp: 2023-07-10 06:00
+  num_days_in_episode: 30
+  occupants_per_zone: 2
+materials:
+  exterior_cv_conductivity: 0.2396
+  exterior_cv_density: 1094.5701
+  interior_mass_cv_density: 10.712
+  interior_wall_cv_conductivity: 0.522
+  interior_wall_cv_density: 206.7936
+  exterior_cv_heat_capacity: 962.255

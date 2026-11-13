@@ -1,0 +1,25 @@
+name: building_2700
+seed: 2700
+floor_plan:
+  width: 522
+  height: 475
+  num_floors: 3
+  min_room_size: 35
+  max_room_size: 46
+  building_shape: composite
+  shape_ratio: 0.32149311879139375
+  composite_coverage: 0.7986734271591915
+  composite_style: architectural
+ahu:
+  num_ahus: 4
+simulation:
+  start_timestamp: 2023-07-10 06:00
+  num_days_in_episode: 30
+  occupants_per_zone: 1
+materials:
+  exterior_cv_conductivity: 0.1894
+  exterior_cv_density: 1060.9779
+  interior_mass_cv_density: 19.6143
+  interior_wall_cv_conductivity: 0.4765
+  interior_wall_cv_density: 242.1209
+  exterior_cv_heat_capacity: 934.9854

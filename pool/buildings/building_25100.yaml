@@ -1,0 +1,25 @@
+name: building_25100
+seed: 25100
+floor_plan:
+  width: 628
+  height: 410
+  num_floors: 4
+  min_room_size: 55
+  max_room_size: 68
+  building_shape: composite
+  shape_ratio: 0.34321784481718015
+  composite_coverage: 0.716967217431958
+  composite_style: architectural
+ahu:
+  num_ahus: 4
+simulation:
+  start_timestamp: 2023-07-10 06:00
+  num_days_in_episode: 30
+  occupants_per_zone: 1
+materials:
+  exterior_cv_conductivity: 0.4358
+  exterior_cv_density: 806.1012
+  interior_mass_cv_density: 38.6824
+  interior_wall_cv_conductivity: 0.5707
+  interior_wall_cv_density: 210.839
+  exterior_cv_heat_capacity: 955.1424

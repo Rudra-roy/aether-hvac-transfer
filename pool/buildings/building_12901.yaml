@@ -1,0 +1,25 @@
+name: building_12901
+seed: 12901
+floor_plan:
+  width: 400
+  height: 380
+  num_floors: 4
+  min_room_size: 57
+  max_room_size: 73
+  building_shape: composite
+  shape_ratio: 0.33341650528139927
+  composite_coverage: 0.808109924938962
+  composite_style: architectural
+ahu:
+  num_ahus: 4
+simulation:
+  start_timestamp: 2023-07-10 06:00
+  num_days_in_episode: 30
+  occupants_per_zone: 1
+materials:
+  exterior_cv_conductivity: 0.1609
+  exterior_cv_density: 974.6263
+  interior_mass_cv_density: 21.398
+  interior_wall_cv_conductivity: 0.5008
+  interior_wall_cv_density: 616.4296
+  exterior_cv_heat_capacity: 957.9056

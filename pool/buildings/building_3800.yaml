@@ -1,0 +1,25 @@
+name: building_3800
+seed: 3800
+floor_plan:
+  width: 360
+  height: 294
+  num_floors: 4
+  min_room_size: 31
+  max_room_size: 44
+  building_shape: composite
+  shape_ratio: 0.2871946740104375
+  composite_coverage: 0.8301606256435974
+  composite_style: architectural
+ahu:
+  num_ahus: 7
+simulation:
+  start_timestamp: 2023-07-10 06:00
+  num_days_in_episode: 30
+  occupants_per_zone: 1
+materials:
+  exterior_cv_conductivity: 0.4629
+  exterior_cv_density: 432.4858
+  interior_mass_cv_density: 28.6741
+  interior_wall_cv_conductivity: 0.5816
+  interior_wall_cv_density: 354.8572
+  exterior_cv_heat_capacity: 899.9779

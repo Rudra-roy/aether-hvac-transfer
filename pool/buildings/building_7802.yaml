@@ -1,0 +1,25 @@
+name: building_7802
+seed: 7802
+floor_plan:
+  width: 423
+  height: 287
+  num_floors: 2
+  min_room_size: 29
+  max_room_size: 40
+  building_shape: composite
+  shape_ratio: 0.32094860183375473
+  composite_coverage: 0.8473753829210959
+  composite_style: architectural
+ahu:
+  num_ahus: 7
+simulation:
+  start_timestamp: 2023-07-10 06:00
+  num_days_in_episode: 30
+  occupants_per_zone: 1
+materials:
+  exterior_cv_conductivity: 0.3008
+  exterior_cv_density: 1886.9376
+  interior_mass_cv_density: 10.1163
+  interior_wall_cv_conductivity: 0.5416
+  interior_wall_cv_density: 295.5437
+  exterior_cv_heat_capacity: 950.6478

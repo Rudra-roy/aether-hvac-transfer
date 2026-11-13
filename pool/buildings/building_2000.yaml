@@ -1,0 +1,25 @@
+name: building_2000
+seed: 2000
+floor_plan:
+  width: 375
+  height: 194
+  num_floors: 3
+  min_room_size: 29
+  max_room_size: 45
+  building_shape: composite
+  shape_ratio: 0.36453642141454295
+  composite_coverage: 0.686143771670187
+  composite_style: architectural
+ahu:
+  num_ahus: 4
+simulation:
+  start_timestamp: 2023-07-10 06:00
+  num_days_in_episode: 30
+  occupants_per_zone: 1
+materials:
+  exterior_cv_conductivity: 0.3802
+  exterior_cv_density: 817.8092
+  interior_mass_cv_density: 11.0124
+  interior_wall_cv_conductivity: 0.515
+  interior_wall_cv_density: 322.5467
+  exterior_cv_heat_capacity: 887.9821

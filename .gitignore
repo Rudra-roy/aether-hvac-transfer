@@ -1,0 +1,10 @@
+__pycache__/
+*.egg-info/
+.venv/
+.pytest_cache/
+external/
+pool/scenarios/
+results/*
+!results/tune/
+!results/baselines/
+submission/*.ipynb

@@ -1,0 +1,25 @@
+name: building_11100
+seed: 11100
+floor_plan:
+  width: 693
+  height: 306
+  num_floors: 3
+  min_room_size: 56
+  max_room_size: 71
+  building_shape: composite
+  shape_ratio: 0.3277393923779611
+  composite_coverage: 0.8290361264244139
+  composite_style: architectural
+ahu:
+  num_ahus: 6
+simulation:
+  start_timestamp: 2023-07-10 06:00
+  num_days_in_episode: 30
+  occupants_per_zone: 2
+materials:
+  exterior_cv_conductivity: 0.2499
+  exterior_cv_density: 1654.3274
+  interior_mass_cv_density: 29.6539
+  interior_wall_cv_conductivity: 0.4993
+  interior_wall_cv_density: 160.9522
+  exterior_cv_heat_capacity: 984.1313

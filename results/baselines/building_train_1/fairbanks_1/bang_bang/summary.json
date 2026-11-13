@@ -1,0 +1,12 @@
+{
+  "policy": "bang_bang",
+  "total_reward": -2487.5097967455004,
+  "total_steps": 8640,
+  "avg_reward": -0.28790622647517367,
+  "total_normalized_productivity_regret": -956.2001613834873,
+  "total_normalized_energy_cost": 3764.4368477117823,
+  "total_normalized_carbon_emission": 5804.511666192295,
+  "seconds_per_step": 0.13714033083783256,
+  "wall_seconds": 1193.377801656723,
+  "params": null
+}
